@@ -1,0 +1,130 @@
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("dbms.jpg");
+
+
+  background-size: cover;
+  font-family: sans-serif;
+}
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  /* styling of whole input container */
+  .form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg,#fff);
+    margin-left: 35px;
+  }
+  /* styling of Input */
+  .input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+  }
+  /* styling of animated border */
+  .form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+  }
+  /* Hover on Input */
+  .form:focus-within {
+    border-radius: var(--after-border-radius);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  /* here is code of animated border */
+  .form:focus-within:before {
+    transform: scale(1);
+  }
+  /* styling of close button */
+  /* == you can click the close button to remove text == */
+  .reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  /* close button shown when typing */
+  input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* sizing svg icons */
+  .form svg {
+    width: 17px;
+    margin-top: 3px;
+  }
+
+  div{
+    border: 2px solid black;
+    width: 300px;
+    padding: 20px;
+    float: left;
+    margin-left: 600px;
+    width: 300px;
+    height:250pxpx;
+    border-radius: 40px;
+    background: lightgrey;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    margin-right: 120px;
+  }
+  .my-button {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background:blue;
+    box-shadow: 3px 3px red;
+    cursor: pointer;
+    margin: 35px 0;
+    margin-left: 40px;
+  }
+  .my-button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+  input[type="text1"] {
+    border-radius: 25px;
+  }
+ 

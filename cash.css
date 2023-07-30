@@ -1,0 +1,62 @@
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url("dbms.jpg");
+
+
+  background-size: cover;
+  font-family: sans-serif;
+}
+div{
+    border: 2px solid black;
+    width: 300px;
+    padding: 50px;
+    float: left;
+    margin-left: 550px;
+    width: 300px;
+    height:250pxpx;
+    border-radius: 40px;
+    background: rgb(249, 247, 247);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+  }
+  h1 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: bold;
+  }
+  .my-button {
+    font-family: monospace;
+    font-size: 0.8rem;
+    color: #FAFAFA;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #FAFAFA;
+    background:blue;
+    box-shadow: 3px 3px red;
+    cursor: pointer;
+    margin: 35px 0;
+    margin-left: 20px;
+  }
+  .my-button:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);
+  }
+  .one{
+    margin-left: 30px;
+  }
+  .my-textarea{
+    margin-left: 70px;
+  }
+  #units{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid rgb(172, 48, 48);
+    border-radius: 4px;
+  }
+  
+  
